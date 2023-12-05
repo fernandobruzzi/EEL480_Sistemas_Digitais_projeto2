@@ -1,0 +1,53 @@
+
+# PlanAhead Generated IO constraints 
+
+NET "lifes[2]" IOSTANDARD = LVCMOS33;
+NET "lifes[1]" IOSTANDARD = LVCMOS33;
+NET "lifes[0]" IOSTANDARD = LVCMOS33;
+NET "input[2]" IOSTANDARD = LVCMOS33;
+NET "input[1]" IOSTANDARD = LVCMOS33;
+NET "input[0]" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "input[2]" LOC = U8;
+NET "input[1]" LOC = U10;
+NET "input[0]" LOC = V8;
+NET "lifes[2]" LOC = U20;
+NET "lifes[1]" LOC = T19;
+NET "lifes[0]" LOC = R20;
+
+# PlanAhead Generated IO constraints 
+
+NET "clk" IOSTANDARD = LVCMOS33;
+NET "botao" IOSTANDARD = LVCMOS33;
+NET "botao" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "reset" IOSTANDARD = LVCMOS33;
+NET "D_B[7]" IOSTANDARD = LVCMOS33;
+NET "D_B[6]" IOSTANDARD = LVCMOS33;
+NET "D_B[5]" IOSTANDARD = LVCMOS33;
+NET "D_B[4]" IOSTANDARD = LVCMOS33;
+NET "D_B[3]" IOSTANDARD = LVCMOS33;
+NET "D_B[2]" IOSTANDARD = LVCMOS33;
+NET "D_B[1]" IOSTANDARD = LVCMOS33;
+NET "D_B[0]" IOSTANDARD = LVCMOS33;
+NET "E_B" IOSTANDARD = LVCMOS33;
+NET "R_S" IOSTANDARD = LVCMOS33;
+NET "R_W" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "reset" LOC = T14;
+NET "botao" LOC = T9;
+NET "clk" LOC = E12;
+NET "E_B" LOC = AB4;
+NET "R_S" LOC = Y14;
+NET "R_W" LOC = W13;
+NET "D_B[0]" LOC = Y13;
+NET "D_B[1]" LOC = AB18;
+NET "D_B[2]" LOC = AB17;
+NET "D_B[3]" LOC = AB12;
+NET "D_B[4]" LOC = AA12;
+NET "D_B[5]" LOC = Y16;
+NET "D_B[6]" LOC = AB16;
+NET "D_B[7]" LOC = Y15;
