@@ -260,69 +260,6 @@ gm_st <= game_state;
 		end if;
 		nx_state  <= ReturnHome;
 		
-		when WriteData2 =>
-		RS<= '1'; RW<= '0';
-		DB <= X"5F";                    --'-'
-		nx_state <= WriteData3; 
-		when WriteData3 =>
-		RS<= '1'; RW<= '0';
-		DB <= X"5F";                    --'-'
-		nx_state  <= WriteData4; 
-		when  WriteData4   =>
-		RS<=   '1';   RW<=   '0';
-		DB   <=  X"5F";                 --'-'
-		nx_state  <= WriteData5; 
-
-		when  WriteData5   =>
-		RS<=   '1';   RW<=   '0';
-		DB   <=  X"5F";                 --'-'
-		nx_state  <= WriteData6;
-
-		when  WriteData6   =>
-		RS<=   '1';   RW<=   '0';
-		DB   <=  X"5F";                 --'-'
-		nx_state  <= SetAddress;
-		
-		when SetAddress =>
-
-		RS<=   '0';   RW<=   '0';
-		DB   <=  "11000101";   --COMANDO PARA POSICIONAR O CURSOR NA LINHA 2 COLUNA 6
-		nx_state  <= WriteData7;
-
-		when  WriteData7   =>
-		RS<=   '1';   RW<=   '0';
-		DB   <=  X"50";                 --'P'
-		nx_state  <= WriteData8;
-
-		when  WriteData8   =>
-		RS<=   '1';   RW<=   '0';
-		DB   <=  X"65";                 --'e'
-		nx_state  <= WriteData9;
-
-		
-		when WriteData9 =>
-		RS<= '1'; RW<= '0';
-		DB <= X"72";                    --'r'
-		nx_state <= WriteData10; 
-
-		when WriteData10 =>
-		RS<= '1'; RW<= '0';
-		DB <= X"64";                    --'d'
-		nx_state <= WriteData11; 
-
-
-		when WriteData11 =>
-		RS<= '1'; RW<= '0';
-		DB <= X"65";                    --'e'
-		nx_state <= WriteData12;
-
-		when WriteData12 =>
-		RS<= '1'; RW<= '0';
-		DB <= X"75";                    --'u'
-		nx_state <= ReturnHome;
-
-
-
 		when   ReturnHome   =>
 		RS<=   '0';   RW<=  '0';
 		DB   <=  "10000000";
